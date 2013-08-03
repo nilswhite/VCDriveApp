@@ -1,4 +1,10 @@
 VCDriveApp::Application.routes.draw do
+
+  get 'courses' => 'pages#courses'
+  get 'about' => 'pages#about'
+
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
