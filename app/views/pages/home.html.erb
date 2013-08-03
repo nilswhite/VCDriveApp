@@ -1,3 +1,5 @@
+<% if user_signed_in? %>
+
 	<div class="hero-unit">
 		<h1><font color="green">VC</font>Drive</h1>
 		<h2>- Members Page -</h2>
@@ -6,7 +8,7 @@
 		<p/>
 		
 		<p>
-			<%= link_to "Start Now", root_path, class: "btn btn-success btn-large"%>
+			<%= link_to "Start Now", new_user_registration_path, class: "btn btn-success btn-large"%>
 		<p/>
 
 	</div>
@@ -36,3 +38,19 @@
 			<%= link_to "Hole Two", courses_path, class: "btn btn-info"%>
 		<p/>
 	</div>
+
+<% else %>
+
+	<div class="hero-unit">
+		<h1>Welcome to VCDrive</h1>
+		<p>
+			You've got the idea, we've got the strategy. Take our advice, you <strong>are</strong> ready! Join the new market and create something
+			<%= link_to "inspiring", "http://onemonthrails.com" %>
+			...
+		<p/>
+		<p>
+			<%= link_to "Start Now", new_user_registration_path, class: "btn btn-success btn-large"%>
+		<p/>
+	</div>
+
+<% end %>

@@ -1,5 +1,7 @@
 VCDriveApp::Application.routes.draw do
 
+  devise_for :users
+
   get 'courses' => 'pages#courses'
   get 'about' => 'pages#about'
 
