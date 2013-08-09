@@ -1,5 +1,8 @@
 VCDriveApp::Application.routes.draw do
 
+  resources :pins
+
+
   devise_for :users
 
   get 'courses' => 'pages#courses'
