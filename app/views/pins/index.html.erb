@@ -1,4 +1,11 @@
-  <div id="pins">
-    <%= render @pins %>
-  </div>
+<% if user_signed_in? %>
+	<%= render 'pages/home' %>
 
+ 	<%= render @pins %>
+
+<% else %>
+	<%= render 'pages/home1' %>
+
+  	<%= render @pins %>
+
+<% end %>

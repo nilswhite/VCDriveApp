@@ -7,8 +7,10 @@ VCDriveApp::Application.routes.draw do
 
   get 'courses' => 'pages#courses'
   get 'about' => 'pages#about'
+  #get 'pins' => 'pins#pin'
+  get 'home' => 'pages#home'
 
-  root :to => 'pages#home'
+  root :to => 'pins#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
