@@ -7,6 +7,7 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
+gem 'faker'
 
 # Gems only used for production
 group :production	do
