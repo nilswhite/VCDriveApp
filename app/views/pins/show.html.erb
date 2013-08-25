@@ -8,9 +8,7 @@
 			<p>
 				by
 			</p>
-			<!--<p>
-				<strong><%= @pin.user.name %></strong>
-			</p> -->
+			
 			
 			<% if current_user == @pin.user %>
 				<%= link_to 'Edit', edit_pin_path(@pin) %> |
