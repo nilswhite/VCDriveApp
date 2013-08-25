@@ -1,6 +1,10 @@
 <% if user_signed_in? %>
+	
+	<div id="pins">
+	 	<%= render @pins %>
+	</div>
 
- 	<%= render @pins %>
+ 	<%= will_paginate @pins %>
 
 <% else %>
 
